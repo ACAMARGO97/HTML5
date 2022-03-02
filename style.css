@@ -1,0 +1,94 @@
+/* configuraciones */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: #FFF;
+	font-family: 'Titillium Web', sans-serif;
+	text-align: left;
+    color: #000000;
+}
+
+a { 
+    color: inherit; 
+    text-decoration: none;
+}
+
+a:visited { color: inherit; }
+a:focus { outline: none; }
+
+
+#hero img.hero-img {
+    width: 100%;
+    height: auto;
+}
+
+#hero h1#hero-landing {
+    position: absolute;
+    top: 3vw;
+    left: 3%;
+    color: #FFF;
+    font-size: 9vw;
+}
+
+#hero h1#hero-overview {
+    position: absolute;
+    top: 15vw;
+    right: 12%;
+    color: #FFF;
+    font-size: 4vw;
+}
+
+
+
+/* overview page */
+#overview {
+    color: #000000;
+    margin: auto;
+    width: 100%;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 90%;
+}
+
+/* navbar */
+#navbar ul {
+    padding: 0 10%;
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #dfe1e6;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+#navbar li {
+    float: left;
+}
+
+#navbar li a {
+    display: block;
+    text-align: center;
+    padding: 15px 20px 12px 20px;
+    border-bottom: solid #dfe1e6 3px;
+    font-weight: 600;
+}
+
+#navbar li a:hover {
+    border-bottom: solid #FF595E 3px;
+}
+
+#navbar ul li a.nav-selection {
+    border-bottom: solid #FF595E 3px;
+}

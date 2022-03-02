@@ -1,12 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Toyota</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+    <nav id="navbar">
+        <ul>
+            <li><a href="#" class="nav-selection" >Inicio</a></li>
+            <li><a href="#">Nav 2</a></li>
+            <li><a href="#">Nav 3</a></li>
+        </ul>
+    </nav>
     
+    <div id="hero">
+        <img class="hero-img" src="https://img.remediosdigitales.com/0eccd3/2560_3000-1/1366_2000.jpg" alt="a neptune blue Toyota 86">
+        <h1 id="hero-overview">Vehiculos Toyota</h1>
+    </div>
+
+    <div id="overview">
+        <div class="container">
+            <h2 >Ingrese los datos para comprar el vehiculo</h2>
+
+            <form action="#">
+
+                Usuario : <input type="text" id="usuario" placeholder="Ejm. Andrea" ><br>
+                <br>
+                Validar Usuario : <input type="text" id="numero1" required pattern="[01]{8}" placeholder="Escriba 8 numeros binarios"> 
+                <br>
+                Clave: <input type="password" id="clave" required>
+                <br>
+                Edad: <input type="text" id="edad" autofocus >
+                <br> 
+                Email: <input type="email" id="emailusuario" required> 
+                <br> 
+                Seleccione una temperatura
+                : <input type="range" id="temperatura" min="0" max="100"> 
+                <br> 
+                <span id="temp">0</span>
+                <br> 
+
+                <p>Primer fecha
+                : <input type="date" id="fecha1" name="fecha1"><br>
+                </p><br>
+                <p><br>
+                Segundo fecha
+                : <input type="date" id="fecha2" name="fecha2"><br>
+                </p>  
+                <br> 
+                <p >Seleccione un color
+                : <input type="color" id="color1" name="color1" style="width: 40px !important;"><br>
+                </p>
+                <br> 
+
+                <p>Ingrese un valor entre 1 y 10
+                : <input type="number" id="valor" name="valor" min="1" max="10"><br>
+                </p>
+    
+                <p>Dirección Web 1
+                : <input type="url" id="direccion1" name="direccion1" size="30" required></p>
+
+            
+                Ingrese el nombre de navegador que utiliza
+                : <input type="text" id="navegador" list="listanavegadores"><br>
+                <datalist id="listanavegadores"><br>
+                <option label="Chrome" value="Chrome"><br>
+                <option label="Firefox" value="Firefox"><br>
+                <option label="Internet Explorer" value="Internet Explorer"><br>
+                <option label="Microsoft Edge" value="Microsoft Edge"><br>
+                <option label="Safari" value="Safari">          
+                </datalist>  
+                <br>
+                Usuario: <input type="text" id="usuario" required>
+                <br> 
+                Clave: <input type="password" id="clave" required placeholder="Escribe tu contraseña">
+                <br> 
+                <input type="submit" value="Confirmar">
+        
+            </form>
+        </div>
+    </div>
 </body>
 </html>
